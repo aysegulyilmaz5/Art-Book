@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/artnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Art name"
+        android:ems="10"
+        android:layout_below="@+id/imageView"
+        android:layout_centerInParent="true"/>
+
+
+    <EditText
+        android:id="@+id/artistnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Artist name"
+        android:layout_below="@+id/artnameText"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Art Year"
+        android:layout_below="@+id/artistnameText"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Save"
+        android:layout_below="@+id/yearText"
+        android:layout_centerInParent="true"
+        android:onClick="save"/>
+</RelativeLayout>
